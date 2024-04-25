@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class LogicalOperator {
+    public static void main(String[] args) {
+        // logical operators = used to connect two or more expression
+        // && = (AND) both conditions must be true
+        // || = (OR) either of the condition must be true
+        // ! = (NOT) reverses bolean value of the condition
+        Scanner scanner = new Scanner(System.in);
+        String message;
+        String response;
+        message = "You are playing an adventrure game, press q or Q to quit";
+        System.out.println(message);
+        response = scanner.next();
+        if (response.equals("q") || response.equals("Q")) {
+            message = "Game cancelled love";
+        } else {
+            message = "Let's go!";
+        }
+        System.out.println(message);
+
+    }
+}

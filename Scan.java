@@ -2,12 +2,16 @@ import java.util.Scanner;
 
 public class Scan {
     public static void main(String[] args){
-        Scanner scaner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("What is your name? ");
-        String name = scaner.nextLine();
+        String name = scanner.nextLine();
         System.out.println("How old are you? ");
-        int age = scaner.nextInt();
+        int age = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("What is your favorite food? ");
+        String food = scanner.nextLine();
         System.out.println("Hello " + name);
-        System.out.println("You are " + age + "years old");
+        System.out.println("You are " + age + " years old");
+        System.out.println("Your favorite food is " + food);
     }
 }
