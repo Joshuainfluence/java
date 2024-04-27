@@ -12,10 +12,15 @@ public class LogicalOperator {
         message = "You are playing an adventrure game, press q or Q to quit";
         System.out.println(message);
         response = scanner.next();
-        if (response.equals("q") || response.equals("Q")) {
-            message = "Game cancelled love";
+        // if (response.equals("q") || response.equals("Q")) {
+        //     message = "You quit the game!";
+        // } else {
+        //     message = "You're still on the game!";
+        // }
+        if (!response.equals("q") || !response.equals("Q")) {
+            message = "You're still on the game!";
         } else {
-            message = "Let's go!";
+            message = "You quit the game!";
         }
         System.out.println(message);
 
