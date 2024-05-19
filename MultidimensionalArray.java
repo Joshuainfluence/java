@@ -21,5 +21,19 @@ public class MultidimensionalArray {
         }
 
         
+
+
+        String[][] bigCar = {
+            {"camero", "corvette", "silverado"},
+            {"mustang", "ranger", "f-150"},
+            {"Ferrari", "Lambo", "tesla"}
+        };
+
+        for (int i = 0; i < bigCar.length; i++) {
+            System.out.println();
+            for (int j = 0; j < bigCar[i].length; j++) {
+                System.out.print(bigCar[i][j] + " ");
+            }
+        }
     }
 }
